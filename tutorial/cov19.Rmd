@@ -1,0 +1,38 @@
+---
+title: "Casos de COVID-19 no Brasil"
+author: "Ícaro Agostino"
+date: "29/03/2020"
+output: html_document
+---
+
+```{r include=FALSE}
+source("https://raw.githubusercontent.com/icaroagostino/API_cov19/master/tutorial/cov19.R")
+```
+
+## Número de casos de COVID-19 no Brasil
+
+Esse relatório dinâmico mostra o número de casos de **COVID-19 no Brasil**, os dados são obtidos de forma dinâmica da API [covid19api](https://covid19api.com/) que utiliza como fonte dados da [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19).
+
+Ultima atualização: **`r cov_br$dia[NROW(cov_br)] %>% format(format="%d/%m/%Y")`**.
+
+### Evolução diária do número de casos confirmados no Brasil (COVID-19)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ggplotly(graph_conf)
+```
+
+### Evolução diária do número de mortes confirmadas no Brasil (COVID-19)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ggplotly(graph_mort)
+```
+
+### Evolução diária do número de recuperados confirmados no Brasil (COVID-19)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ggplotly(graph_rec)
+```
+
+---
+
+Esse relatório dinâmico esta disponível em: https://github.com/icaroagostino/API_cov19
