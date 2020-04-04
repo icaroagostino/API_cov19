@@ -1,7 +1,7 @@
 ---
 title: "Casos de COVID-19 no Brasil por estado"
 author: "Ícaro Agostino"
-date: "03/04/2020"
+date: "04/04/2020"
 output: html_document
 ---
 
