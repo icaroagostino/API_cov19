@@ -36,7 +36,7 @@ cov_br <- data.frame(
   
 )
 
-cov_br <- cov_br[-1,]
+cov_br <- cov_br[36:NROW(cov_br),]
 
 graph_conf <- cov_br %>%
   ggplot(aes(x = dia)) +
@@ -103,11 +103,11 @@ graph_rec_nc <- cov_br_nc %>%
 
 #----------------------
 
-# Último dia dos dados
+# ?ltimo dia dos dados
 
 cov_ld <- data.frame(
   
-  row.names = c("Último dia", "Total acumulado"),
+  row.names = c("?ltimo dia", "Total acumulado"),
   
   `Casos confirmados` = c(cov_br_nc[NROW(cov_br_nc),][[2]],
                         cov_br[NROW(cov_br),][[2]]),
