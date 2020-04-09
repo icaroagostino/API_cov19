@@ -103,11 +103,11 @@ graph_rec_nc <- cov_br_nc %>%
 
 #----------------------
 
-# ?ltimo dia dos dados
+# Último dia dos dados
 
 cov_ld <- data.frame(
   
-  row.names = c("?ltimo dia", "Total acumulado"),
+  row.names = c("Último dia", "Total acumulado"),
   
   `Casos confirmados` = c(cov_br_nc[NROW(cov_br_nc),][[2]],
                         cov_br[NROW(cov_br),][[2]]),
