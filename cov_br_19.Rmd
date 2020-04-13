@@ -1,7 +1,7 @@
 ---
 title: "Casos de COVID-19 no Brasil"
 author: "Ícaro Agostino"
-date: "11/04/2020"
+date: "13/04/2020"
 output: html_document
 ---
 
