@@ -36,7 +36,7 @@ cov_br <- data.frame(
   
 )
 
-cov_br <- cov_br[36:NROW(cov_br),]
+cov_br <- cov_br[36:NROW(cov_br)-1,]
 
 graph_conf <- cov_br %>%
   ggplot(aes(x = dia)) +
